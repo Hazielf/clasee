@@ -24,35 +24,35 @@ public class Vender_5 extends JDialog implements ActionListener {
 	private JTextField txtS;
 	
 	
-	 	// Datos mÌnimos de la primera tela
+	 	// Datos m√≠nimos de la primera tela
 		public static String codigo0 = "TF0";
 		public static String descripcion0 = "Pinstripe Suit 1";
-		public static String material0 = "98%AlgodÛn, 2%Elast·n";
+		public static String material0 = "98%Algod√≥n, 2%Elast√°n";
 		public static double ancho0 = 160.0;
 		public static double peso0 = 220.0;
 		public static double precio0 = 9.4;
-		// Datos mÌnimos de la segunda tela
+		// Datos m√≠nimos de la segunda tela
 		public static String codigo1 = "TF1";
 		public static String descripcion1 = "Gabardina Oslo 5";
-		public static String material1 = "60%AlgodÛn, 37%PoliÈster";
+		public static String material1 = "60%Algod√≥n, 37%Poli√©ster";
 		public static double ancho1 = 145.0;
 		public static double peso1 = 300.0;
 		public static double precio1 = 11.3;
-		// Datos mÌnimos de la tercera tela
+		// Datos m√≠nimos de la tercera tela
 		public static String codigo2 = "TF2";
 		public static String descripcion2 = "Sarga 2";
-		public static String material2 = "50%PoliÈster, 50%Poliacril";
+		public static String material2 = "50%Poli√©ster, 50%Poliacril";
 		public static double ancho2 = 145.0;
 		public static double peso2 = 425.0;
 		public static double precio2 = 31.8;
-		// Datos mÌnimos de la cuarta tela
+		// Datos m√≠nimos de la cuarta tela
 		public static String codigo3 = "TF3";
 		public static String descripcion3 = "Leni 1";
-		public static String material3 = "50%PoliÈster, 50%Poliacril";
+		public static String material3 = "50%Poli√©ster, 50%Poliacril";
 		public static double ancho3 = 145.0;
 		public static double peso3 = 410.0;
 		public static double precio3 = 37.2;
-		// Datos mÌnimos de la quinta tela
+		// Datos m√≠nimos de la quinta tela
 		public static String codigo4 = "TF4";
 		public static String descripcion4 = "Laurent 3";
 		public static String material4 = "100%Poliamida";
@@ -167,6 +167,13 @@ public class Vender_5 extends JDialog implements ActionListener {
 			actionPerformedBtncerrar(e);
 		}
 	}
+	protected void actionPerformedBtncerrar(ActionEvent e) {
+		dispose();
+	}
+	protected void actionPerformedBtnvender(ActionEvent e) {
+	}
+}
+
 	protected void actionPerformedBtncerrar(ActionEvent e) {
 		dispose();
 	}
