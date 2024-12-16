@@ -44,14 +44,14 @@ public class GenerarReporte6 extends JDialog implements ActionListener {
 	 */
 	public GenerarReporte6() {
 		setTitle("Generar reportes");
-		setBounds(100, 100, 450, 300);
+		setBounds(100, 100, 640, 340);
 		getContentPane().setLayout(new BorderLayout());
 		contentPanel.setBorder(new EmptyBorder(5, 5, 5, 5));
 		getContentPane().add(contentPanel, BorderLayout.CENTER);
 		contentPanel.setLayout(null);
 		
 		scpScroll = new JScrollPane();
-		scpScroll.setBounds(10, 49, 414, 201);
+		scpScroll.setBounds(10, 49, 604, 241);
 		contentPanel.add(scpScroll);
 		
 		txtS = new JTextArea();
@@ -60,7 +60,7 @@ public class GenerarReporte6 extends JDialog implements ActionListener {
 		
 		btncerrar = new JButton("Cerrar");
 		btncerrar.addActionListener(this);
-		btncerrar.setBounds(335, 15, 89, 23);
+		btncerrar.setBounds(525, 15, 89, 23);
 		contentPanel.add(btncerrar);
 		
 		lblTipoDeReporte = new JLabel("Tipo de reporte");
@@ -69,8 +69,8 @@ public class GenerarReporte6 extends JDialog implements ActionListener {
 		
 		cboTipoDeReporte = new JComboBox();
 		cboTipoDeReporte.addActionListener(this);
-		cboTipoDeReporte.setModel(new DefaultComboBoxModel(new String[] {"Ventas por tela", "Telas con venta Ã³ptima", "Telas con precios mayores al 75% del precio mÃ¡ximo", "Telas con precios menores al 75% del precio mÃ¡ximo", "Precios menor, mayor y promedio"}));
-		cboTipoDeReporte.setBounds(109, 15, 216, 22);
+		cboTipoDeReporte.setModel(new DefaultComboBoxModel(new String[] {"Ventas por tela", "Telas con venta \u00D3ptima", "Telas con precios mayores al 75% del precio m\u00E1ximo", "Telas con precios menores al 75% del precio m\u00E1ximo", "Precios menor, mayor y promedio"}));
+		cboTipoDeReporte.setBounds(109, 15, 406, 22);
 		contentPanel.add(cboTipoDeReporte);
 	}
 
@@ -119,31 +119,31 @@ public class GenerarReporte6 extends JDialog implements ActionListener {
 	void caso0(){
 		txtS.setText("VENTAS POR TELA \n\n");
     	
-    	txtS.append(String.format("CÃ³digo \t\t\t: %s\n", MenuPrincipal1.codigo0));
+    	txtS.append(String.format("Código \t\t\t: %s\n", MenuPrincipal1.codigo0));
     	txtS.append(String.format("Descripcion \t\t\t: %s\n", MenuPrincipal1.descripcion0));
     	txtS.append(String.format("Cantidad total de ventas \t\t: %d\n", MenuPrincipal1.ventasTela[0]));
     	txtS.append(String.format("Cantidad Total de metros vendidos \t: %.3f\n", MenuPrincipal1.metrosVendidos[0]));
     	txtS.append(String.format("Importe total acumulado \t\t: S/. %.3f\n\n", MenuPrincipal1.importeTotal[0]));
     	
-    	txtS.append(String.format("CÃ³digo \t\t\t: %s\n", MenuPrincipal1.codigo1));
+    	txtS.append(String.format("Código \t\t\t: %s\n", MenuPrincipal1.codigo1));
     	txtS.append(String.format("Descripcion \t\t\t: %s\n", MenuPrincipal1.descripcion1));
     	txtS.append(String.format("Cantidad total de ventas \t\t: %d\n", MenuPrincipal1.ventasTela[1]));
     	txtS.append(String.format("Cantidad Total de metros vendidos \t: %.3f\n", MenuPrincipal1.metrosVendidos[1]));
     	txtS.append(String.format("Importe total acumulado \t\t: S/. %.3f\n\n", MenuPrincipal1.importeTotal[1]));
     	
-    	txtS.append(String.format("CÃ³digo \t\t\t: %s\n", MenuPrincipal1.codigo2));
+    	txtS.append(String.format("Código \t\t\t: %s\n", MenuPrincipal1.codigo2));
     	txtS.append(String.format("Descripcion \t\t\t: %s\n", MenuPrincipal1.descripcion2));
     	txtS.append(String.format("Cantidad total de ventas \t\t: %d\n", MenuPrincipal1.ventasTela[2]));
     	txtS.append(String.format("Cantidad Total de metros vendidos \t: %.3f\n", MenuPrincipal1.metrosVendidos[2]));
     	txtS.append(String.format("Importe total acumulado \t\t: S/. %.3f\n\n", MenuPrincipal1.importeTotal[2]));
     	
-    	txtS.append(String.format("CÃ³digo \t\t\t: %s\n", MenuPrincipal1.codigo3));
+    	txtS.append(String.format("Código \t\t\t: %s\n", MenuPrincipal1.codigo3));
     	txtS.append(String.format("Descripcion \t\t\t: %s\n", MenuPrincipal1.descripcion3));
     	txtS.append(String.format("Cantidad total de ventas \t\t: %d\n", MenuPrincipal1.ventasTela[3]));
     	txtS.append(String.format("Cantidad Total de metros vendidos \t: %.3f\n", MenuPrincipal1.metrosVendidos[3]));
     	txtS.append(String.format("Importe total acumulado \t\t: S/. %.3f\n\n", MenuPrincipal1.importeTotal[3]));
     	
-    	txtS.append(String.format("CÃ³digo \t\t\t: %s\n", MenuPrincipal1.codigo4));
+    	txtS.append(String.format("Código \t\t\t: %s\n", MenuPrincipal1.codigo4));
     	txtS.append(String.format("Descripcion \t\t\t: %s\n", MenuPrincipal1.descripcion4));
     	txtS.append(String.format("Cantidad total de ventas \t\t: %d\n", MenuPrincipal1.ventasTela[4]));
     	txtS.append(String.format("Cantidad Total de metros vendidos \t: %.3f\n", MenuPrincipal1.metrosVendidos[4]));
@@ -159,37 +159,37 @@ public class GenerarReporte6 extends JDialog implements ActionListener {
 		txtS.setText("TELAS CON VENTA OPTIMA\n\n");
 		
 		if (MenuPrincipal1.metrosVendidos[0] >= cantidadOptima) {
-			txtS.append(String.format("CÃ³digo\t\t\t: %s\n", MenuPrincipal1.codigo0));
+			txtS.append(String.format("Código\t\t\t: %s\n", MenuPrincipal1.codigo0));
 			txtS.append(String.format("Descripcion\t\t\t: %s\n", MenuPrincipal1.descripcion0));
 			txtS.append(String.format("Cantidad Total de metros vendidos\t: %s\n\n", 
 					MenuPrincipal1.metrosVendidos[0]));
 		}
 		if (MenuPrincipal1.metrosVendidos[1] >= cantidadOptima) {
-			txtS.append(String.format("CÃ³digo\t\t\t: %s\n", MenuPrincipal1.codigo1));
+			txtS.append(String.format("Código\t\t\t: %s\n", MenuPrincipal1.codigo1));
 			txtS.append(String.format("Descripcion\t\t\t: %s\n", MenuPrincipal1.descripcion1));
 			txtS.append(String.format("Cantidad Total de metros vendidos\t: %s\n\n", 
 					MenuPrincipal1.metrosVendidos[1]));
 		}
 		if (MenuPrincipal1.metrosVendidos[2] >= cantidadOptima) {
-			txtS.append(String.format("CÃ³digo\t\t\t: %s\n", MenuPrincipal1.codigo2));
+			txtS.append(String.format("Código\t\t\t: %s\n", MenuPrincipal1.codigo2));
 			txtS.append(String.format("Descripcion\t\t\t: %s\n", MenuPrincipal1.descripcion2));
 			txtS.append(String.format("Cantidad Total de metros vendidos\t: %s\n\n", 
 					MenuPrincipal1.metrosVendidos[2]));
 		}
 		if (MenuPrincipal1.metrosVendidos[3] >= cantidadOptima) {
-			txtS.append(String.format("CÃ³digo\t\t\t: %s\n", MenuPrincipal1.codigo3));
+			txtS.append(String.format("Código\t\t\t: %s\n", MenuPrincipal1.codigo3));
 			txtS.append(String.format("Descripcion\t\t\t: %s\n", MenuPrincipal1.descripcion3));
 			txtS.append(String.format("Cantidad Total de metros vendidos\t: %s\n\n", 
 					MenuPrincipal1.metrosVendidos[3]));
 		}
 		if (MenuPrincipal1.metrosVendidos[4] >= cantidadOptima) {
-			txtS.append(String.format("CÃ³digo\t\t\t: %s\n", MenuPrincipal1.codigo4));
+			txtS.append(String.format("Código\t\t\t: %s\n", MenuPrincipal1.codigo4));
 			txtS.append(String.format("Descripcion\t\t\t: %s\n", MenuPrincipal1.descripcion4));
 			txtS.append(String.format("Cantidad Total de metros vendidos\t: %s\n\n", 
 					MenuPrincipal1.metrosVendidos[4]));
 		}
 	}
-	//Telas con precios mayores al 75% del precio mÃ¡ximo
+	//Telas con precios mayores al 75% del precio máximo
 	void caso2() {
 		int numeroDeMarcas = 0;
 		double precioMaximo, minimoObjetivo;
@@ -200,36 +200,36 @@ public class GenerarReporte6 extends JDialog implements ActionListener {
 		txtS.setText("TELAS CON PRECIOS MAYORES AL 75% DEL PRECIO MAXIMO\n\n");
 		
 		if(MenuPrincipal1.precio0 > minimoObjetivo) {
-			txtS.append(String.format("Descripcion\t: %s\n", MenuPrincipal1.descripcion0));
+			txtS.append(String.format("Descripción\t: %s\n", MenuPrincipal1.descripcion0));
 			txtS.append(String.format("Precio\t: %.2f\n\n", MenuPrincipal1.precio0));
 			numeroDeMarcas++;
 		}
 		if(MenuPrincipal1.precio1 > minimoObjetivo) {
-			txtS.append(String.format("Descripci	on\t: %s\n", MenuPrincipal1.descripcion1));
+			txtS.append(String.format("Descripción\t: %s\n", MenuPrincipal1.descripcion1));
 			txtS.append(String.format("Precio\t: %.2f\n\n", MenuPrincipal1.precio1));
 			numeroDeMarcas++;
 		}
 		if(MenuPrincipal1.precio2 > minimoObjetivo) {
-			txtS.append(String.format("Descripcion\t: %s\n", MenuPrincipal1.descripcion2));
+			txtS.append(String.format("Descripción\t: %s\n", MenuPrincipal1.descripcion2));
 			txtS.append(String.format("Precio\t: %.2f\n\n", MenuPrincipal1.precio2));
 			numeroDeMarcas++;
 		}
 		if(MenuPrincipal1.precio3 > minimoObjetivo) {
-			txtS.append(String.format("Descripcion\t: %s\n", MenuPrincipal1.descripcion3));
+			txtS.append(String.format("Descripción\t: %s\n", MenuPrincipal1.descripcion3));
 			txtS.append(String.format("Precio\t: %.2f\n\n", MenuPrincipal1.precio3));
 			numeroDeMarcas++;
 		}
 		if(MenuPrincipal1.precio4 > minimoObjetivo) {
-			txtS.append(String.format("Descripcion\t: %s\n", MenuPrincipal1.descripcion4));
+			txtS.append(String.format("Descripción\t: %s\n", MenuPrincipal1.descripcion4));
 			txtS.append(String.format("Precio\t: %.2f\n\n", MenuPrincipal1.precio4));
 			numeroDeMarcas++;
 		}
 		
-		txtS.append(String.format("75%% del precio mÃ¡ximo\t: %.2f\n", minimoObjetivo));
-		txtS.append(String.format("NÃºmero de marcas\t: %d", numeroDeMarcas));
+		txtS.append(String.format("75%% del precio máximo\t: %.2f\n", minimoObjetivo));
+		txtS.append(String.format("Número de marcas\t: %d", numeroDeMarcas));
 		
 	}
-	//Telas con precios menores al 75% del precio mÃ¡ximo
+	//Telas con precios menores al 75% del precio máximo
 	void caso3() {
 		int numeroDeMarcas = 0;
 		double precioMaximo, minimoObjetivo;
@@ -240,35 +240,35 @@ public class GenerarReporte6 extends JDialog implements ActionListener {
 		txtS.setText("TELAS CON PRECIOS MENORES AL 75% DEL PRECIO MAXIMO\n\n");
 		
 		if(MenuPrincipal1.precio0 < minimoObjetivo) {
-			txtS.append(String.format("Descripcion\t: %s\n", MenuPrincipal1.descripcion0));
+			txtS.append(String.format("Descripción\t: %s\n", MenuPrincipal1.descripcion0));
 			txtS.append(String.format("Precio\t: %.2f\n\n", MenuPrincipal1.precio0));
 			numeroDeMarcas++;
 		}
 		if(MenuPrincipal1.precio1 < minimoObjetivo) {
-			txtS.append(String.format("Descripcion\t: %s\n", MenuPrincipal1.descripcion1));
+			txtS.append(String.format("Descripción\t: %s\n", MenuPrincipal1.descripcion1));
 			txtS.append(String.format("Precio\t: %.2f\n\n", MenuPrincipal1.precio1));
 			numeroDeMarcas++;
 		}
 		if(MenuPrincipal1.precio2 < minimoObjetivo) {
-			txtS.append(String.format("Descripcion\t: %s\n", MenuPrincipal1.descripcion2));
+			txtS.append(String.format("Descripción\t: %s\n", MenuPrincipal1.descripcion2));
 			txtS.append(String.format("Precio\t: %.2f\n\n", MenuPrincipal1.precio2));
 			numeroDeMarcas++;
 		}
 		if(MenuPrincipal1.precio3 < minimoObjetivo) {
-			txtS.append(String.format("Descripcion\t: %s\n", MenuPrincipal1.descripcion3));
+			txtS.append(String.format("Descripción\t: %s\n", MenuPrincipal1.descripcion3));
 			txtS.append(String.format("Precio\t: %.2f\n\n", MenuPrincipal1.precio3));
 			numeroDeMarcas++;
 		}
 		if(MenuPrincipal1.precio4 < minimoObjetivo) {
-			txtS.append(String.format("Descripcion\t: %s\n", MenuPrincipal1.descripcion4));
+			txtS.append(String.format("Descripción\t: %s\n", MenuPrincipal1.descripcion4));
 			txtS.append(String.format("Precio\t: %.2f\n\n", MenuPrincipal1.precio4));
 			numeroDeMarcas++;
 		}
 		
-		txtS.append(String.format("75%% del precio mÃ­nimo\t: %.2f\n", minimoObjetivo));
-		txtS.append(String.format("NÃºmero de marcas\t: %d", numeroDeMarcas));
+		txtS.append(String.format("75%% del precio mínimo\t: %.2f\n", minimoObjetivo));
+		txtS.append(String.format("Número de marcas\t: %d", numeroDeMarcas));
 	}
-	//Promedios mÃ¡ximos y mÃ­nimos
+	//Promedios máximos y mínimos
 	void caso4() {
 		double[] ancho = listaOrdenada("ancho");
 		double[] peso = listaOrdenada("peso");
@@ -278,19 +278,19 @@ public class GenerarReporte6 extends JDialog implements ActionListener {
 		double promedioPeso = calcularPromedio(peso);
 		double promedioPrecio = calcularPromedio(precio);
 		
-		txtS.setText("PROMEDIOS, MÃXIMOS Y MÃNIMOS\n\n");
+		txtS.setText("PROMEDIOS, MÁXIMOS Y MÍNIMOS\n\n");
 		
 		txtS.append(String.format("Ancho promedio\t: %.1f cm\n", promedioAncho));
-		txtS.append(String.format("Ancho mÃ­nimo\t\t: %.1f cm\n", ancho[0]));
-		txtS.append(String.format("Ancho mÃ¡ximo\t: %.1f cm\n\n", ancho[ancho.length-1]));
+		txtS.append(String.format("Ancho mínimo\t\t: %.1f cm\n", ancho[0]));
+		txtS.append(String.format("Ancho máximo\t\t: %.1f cm\n\n", ancho[ancho.length-1]));
 		
-		txtS.append(String.format("Peso promedio\t: %.1f g/mÂ²\n", promedioPeso));
-		txtS.append(String.format("Peso mÃ­nimo\t\t: %.1f g/mÂ²\n", peso[0]));
-		txtS.append(String.format("Peso mÃ¡ximo\t\t: %.1f g/mÂ²\n\n", peso[peso.length-1]));
+		txtS.append(String.format("Peso promedio\t\t: %.1f g/m²\n", promedioPeso));
+		txtS.append(String.format("Peso mínimo\t\t: %.1f g/m²\n", peso[0]));
+		txtS.append(String.format("Peso máximo\t\t: %.1f g/m²\n\n", peso[peso.length-1]));
 		
 		txtS.append(String.format("Precio promedio\t: S/ %.1f\n", promedioPeso));
-		txtS.append(String.format("Precio mÃ­nimo\t\t: S/ %.1f\n", peso[0]));
-		txtS.append(String.format("Precio mÃ¡ximo\t: S/ %.1f\n", peso[peso.length-1]));
+		txtS.append(String.format("Precio mínimo\t\t: S/ %.1f\n", peso[0]));
+		txtS.append(String.format("Precio máximo\t\t: S/ %.1f\n", peso[peso.length-1]));
 		
 		
 	}

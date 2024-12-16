@@ -81,35 +81,35 @@ public class ListarTela4 extends JDialog implements ActionListener {
 		txtS.append(String.format("Descripcion \t: %s\n", MenuPrincipal1.descripcion0));
 		txtS.append(String.format("Material \t: %s\n", MenuPrincipal1.material0));
 		txtS.append(String.format("Ancho \t: %s cm\n", MenuPrincipal1.ancho0));
-		txtS.append(String.format("Peso \t: %s g/mÂ²\n", MenuPrincipal1.peso0));
+		txtS.append(String.format("Peso \t: %s g/m²\n", MenuPrincipal1.peso0));
 		txtS.append(String.format("Precio \t: S/ %s.\n\n", MenuPrincipal1.precio0));
 		
 		txtS.append(String.format("Codigo \t: %s\n", MenuPrincipal1.codigo1));
 		txtS.append(String.format("Descripcion \t: %s\n", MenuPrincipal1.descripcion1));
 		txtS.append(String.format("Material \t: %s\n", MenuPrincipal1.material1));
 		txtS.append(String.format("Ancho \t: %s cm\n", MenuPrincipal1.ancho1));
-		txtS.append(String.format("Peso \t: %s g/mÂ²\n", MenuPrincipal1.peso1));
+		txtS.append(String.format("Peso \t: %s g/m²\n", MenuPrincipal1.peso1));
 		txtS.append(String.format("Precio \t: S/ %s.\n\n", MenuPrincipal1.precio1));
 
 		txtS.append(String.format("Codigo \t: %s\n", MenuPrincipal1.codigo2));
 		txtS.append(String.format("Descripcion \t: %s\n", MenuPrincipal1.descripcion2));
 		txtS.append(String.format("Material \t: %s\n", MenuPrincipal1.material2));
 		txtS.append(String.format("Ancho \t: %s cm\n", MenuPrincipal1.ancho2));
-		txtS.append(String.format("Peso \t: %s g/mÂ²\n", MenuPrincipal1.peso2));
+		txtS.append(String.format("Peso \t: %s g/m²\n", MenuPrincipal1.peso2));
 		txtS.append(String.format("Precio \t: S/ %s.\n\n", MenuPrincipal1.precio2));
 		
 		txtS.append(String.format("Codigo \t: %s\n", MenuPrincipal1.codigo3));
 		txtS.append(String.format("Descripcion \t: %s\n", MenuPrincipal1.descripcion3));
 		txtS.append(String.format("Material \t: %s\n", MenuPrincipal1.material3));
 		txtS.append(String.format("Ancho \t: %s cm\n", MenuPrincipal1.ancho3));
-		txtS.append(String.format("Peso \t: %s g/mÂ²\n", MenuPrincipal1.peso3));
+		txtS.append(String.format("Peso \t: %s g/m²\n", MenuPrincipal1.peso3));
 		txtS.append(String.format("Precio \t: S/ %s.\n\n", MenuPrincipal1.precio3));
 		
 		txtS.append(String.format("Codigo \t: %s\n", MenuPrincipal1.codigo4));
 		txtS.append(String.format("Descripcion \t: %s\n", MenuPrincipal1.descripcion4));
 		txtS.append(String.format("Material \t: %s\n", MenuPrincipal1.material4));
 		txtS.append(String.format("Ancho \t: %s cm\n", MenuPrincipal1.ancho4));
-		txtS.append(String.format("Peso \t: %s g/mÂ²\n", MenuPrincipal1.peso4));
+		txtS.append(String.format("Peso \t: %s g/m²\n", MenuPrincipal1.peso4));
 		txtS.append(String.format("Precio \t: S/ %s.", MenuPrincipal1.precio4));
 	}
 	protected void actionPerformedBtncerrar(ActionEvent e) {

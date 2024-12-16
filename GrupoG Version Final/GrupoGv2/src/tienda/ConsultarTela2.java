@@ -166,11 +166,18 @@ public class ConsultarTela2 extends JDialog implements ActionListener {
 
 			break;
 			
-		default:	txtDescripcion.setText(MenuPrincipal1.descripcion3);
+		case 3:	txtDescripcion.setText(MenuPrincipal1.descripcion3);
 					txtMaterial.setText(MenuPrincipal1.material3);
 					txtPrecio.setText(MenuPrincipal1.precio3+"");
 					txtPeso.setText(MenuPrincipal1.peso3+"");
 					txtAncho.setText(MenuPrincipal1.ancho3+"");
+			break;
+
+		default:	txtDescripcion.setText(MenuPrincipal1.descripcion4);
+					txtMaterial.setText(MenuPrincipal1.material4);
+					txtPrecio.setText(MenuPrincipal1.precio4+"");
+					txtPeso.setText(MenuPrincipal1.peso4+"");
+					txtAncho.setText(MenuPrincipal1.ancho4+"");
 			break;
 		}
 	}

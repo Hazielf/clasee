@@ -171,11 +171,18 @@ public class ModificarTela3 extends JDialog implements ActionListener {
 
 			break;
 			
-		default:	txtDescripcion.setText(MenuPrincipal1.descripcion3);
+		case 3:		txtDescripcion.setText(MenuPrincipal1.descripcion3);
 					txtMaterial.setText(MenuPrincipal1.material3);
 					txtPrecio.setText(MenuPrincipal1.precio3+"");
 					txtPeso.setText(MenuPrincipal1.peso3+"");
 					txtAncho.setText(MenuPrincipal1.ancho3+"");
+			break;
+			
+		default:	txtDescripcion.setText(MenuPrincipal1.descripcion4);
+					txtMaterial.setText(MenuPrincipal1.material4);
+					txtPrecio.setText(MenuPrincipal1.precio4+"");
+					txtPeso.setText(MenuPrincipal1.peso4+"");
+					txtAncho.setText(MenuPrincipal1.ancho4+"");
 			break;
 		}
 	}
@@ -214,12 +221,22 @@ public class ModificarTela3 extends JDialog implements ActionListener {
 			
 			break;
 			
-		default:
+		case 3:
+			
 			MenuPrincipal1.descripcion3=txtDescripcion.getText();
 			MenuPrincipal1.material3=txtMaterial.getText();
 			MenuPrincipal1.precio3=Double.parseDouble(txtPrecio.getText());
 			MenuPrincipal1.peso3=Double.parseDouble(txtPeso.getText());
 			MenuPrincipal1.ancho3=Double.parseDouble(txtAncho.getText());
+			
+			break;
+			
+		default:
+			MenuPrincipal1.descripcion4=txtDescripcion.getText();
+			MenuPrincipal1.material4=txtMaterial.getText();
+			MenuPrincipal1.precio4=Double.parseDouble(txtPrecio.getText());
+			MenuPrincipal1.peso4=Double.parseDouble(txtPeso.getText());
+			MenuPrincipal1.ancho4=Double.parseDouble(txtAncho.getText());
 			
 			break;
 		}

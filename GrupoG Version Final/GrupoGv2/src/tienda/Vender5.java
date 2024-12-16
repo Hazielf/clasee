@@ -24,7 +24,7 @@ public class Vender5 extends JDialog implements ActionListener {
     private JButton btnCerrar;
     private JComboBox cboCodigo;
 
-    private JLabel lblimage;
+
     private JButton btnVender;
     private JTextArea txtS;
     private String codigoSeleccionado = "TF0";  // Inicializar con valor predeterminado
@@ -48,7 +48,7 @@ public class Vender5 extends JDialog implements ActionListener {
      */
     public Vender5() {
         setTitle("Vender");
-        setBounds(100, 100, 450, 300);
+        setBounds(100, 100, 450, 350);
         getContentPane().setLayout(new BorderLayout());
         contentPanel.setBorder(new EmptyBorder(5, 5, 5, 5));
         getContentPane().add(contentPanel, BorderLayout.CENTER);
@@ -104,7 +104,7 @@ public class Vender5 extends JDialog implements ActionListener {
         }
         {
             JScrollPane scpScroll = new JScrollPane();
-            scpScroll.setBounds(10, 127, 414, 123);
+            scpScroll.setBounds(10, 127, 414, 173);
             contentPanel.add(scpScroll);
             {
                 txtS = new JTextArea();
@@ -160,7 +160,7 @@ public class Vender5 extends JDialog implements ActionListener {
     	try {
     	    metrosComprados = Integer.parseInt(txtCantidadMetros.getText());
     	} catch (NumberFormatException ex) {
-    	    txtS.setText("ERROR: Introduzca un nÃºmero vÃ¡lido por favor.");
+    	    txtS.setText("ERROR: Introduzca un número válido por favor.");
     	    return;
     	}
     	
@@ -173,26 +173,26 @@ public class Vender5 extends JDialog implements ActionListener {
     	
     	
     	if (metrosComprados < 0){
-    		txtS.setText("ERROR: introduzca un nÃºmero valido por favor");
+    		txtS.setText("ERROR: introduzca un número valido por favor");
     	}
     	else{
     		//Imprimir texto
     		txtS.setText("BOLETA DE VENTA: \n\n");
-            txtS.append(String.format("El codigo de la tela es\t\t:  %s \n", codigoSeleccionado));
-            txtS.append(String.format("La descripciÃ³n de su tela es\t:  %s \n", descripcionTela));
-        	txtS.append(String.format("Precio de la tela\t\t:  %.3f \n", precio));
-        	txtS.append(String.format("Usted compro\t\t:  %d metros. \n", metrosComprados));
-        	txtS.append(String.format("El importe de su compra serÃ¡\t:  S/%.3f \n", importeCompra));
-        	txtS.append(String.format("Le descontamos\t\t:  S/%.3f \n", importeDescuento));
-        	txtS.append(String.format("Tiene que pagar\t\t:  S/%.3f \n", importeAPagar));
+            txtS.append(String.format("El codigo de la tela es\t:  %s \n", codigoSeleccionado));
+            txtS.append(String.format("La descripción de su tela es\t:  %s \n", descripcionTela));
+        	txtS.append(String.format("Precio de la tela\t:  %.3f \n", precio));
+        	txtS.append(String.format("Usted compró\t\t:  %d metros. \n", metrosComprados));
+        	txtS.append(String.format("El importe de su compra será¡\t:  S/%.3f \n", importeCompra));
+        	txtS.append(String.format("Le descontamos\t:  S/%.3f \n", importeDescuento));
+        	txtS.append(String.format("Tiene que pagar\t:  S/%.3f \n", importeAPagar));
         	
         	if (mereceObsequio) {
-        		txtS.append("Felicidades, se gano\t\t: " + MenuPrincipal1.obsequio + "\n");
+        		txtS.append("Felicidades, se gano\t: " + MenuPrincipal1.obsequio + "\n");
         	}
         	
         	if ((MenuPrincipal1.cantidadDeVentas+1) % MenuPrincipal1.numeroClienteSorpresa == 0) {
-        		txtS.append(String.format("\nFelicidades, cliente nÃºmero"
-        				+ " %d, se ganÃ³: %s!!!!", MenuPrincipal1.numeroClienteSorpresa,
+        		txtS.append(String.format("\nFelicidades, cliente número"
+        				+ " %d, se gana: %s!!!!", MenuPrincipal1.numeroClienteSorpresa,
         				MenuPrincipal1.premioSorpresa));
         	}
         	
